@@ -1,9 +1,12 @@
 import unittest
+from solution import *
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
+class AnagramSolutionTest(unittest.TestCase):
+
+    def test_two_strings_are_anagram(self):
+        result = anagram_example_result("tom marvolo riddle", "i am lordvoldemort")
+        self.assertEquals(result, "they are anagrams")
 
 
 if __name__ == '__main__':
