@@ -8,12 +8,12 @@ class AnagramSolutionTest(unittest.TestCase):
         self.assertEquals(result,
                           "remove 7 characters from 'Tom Marvolo Riddle' and 8 characters from 'I Am Lord Voldemort'")
 
-    def test_two_strings_are_not_anagram_case_1(self):
+    def test_two_strings_are_not_anagram_case_2(self):
         result = anagram_example_result("tom marvolo riddle", "i am lord voldemort")
         self.assertEquals(result,
                           "remove 0 characters from 'tom marvolo riddle' and 1 characters from 'i am lord voldemort'")
 
-    def test_two_strings_are_not_anagram_case_1(self):
+    def test_two_strings_are_not_anagram_case_3(self):
         result = anagram_example_result("tom riddle", "voldemort")
         self.assertEquals(result,
                           "remove 3 characters from 'tom riddle' and 2 characters from 'voldemort'")
